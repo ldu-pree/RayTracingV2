@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css")
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		style
+			include ../style/custom.css
+		title Raytracing Demo
+	body
+		header
+			.w-100.pb-3.pt-3.bg-dark.text-white.text-center
+				h1 RayTracingV2
+				div
+					button.IBN(onclick="toggleWall()") Add Wall
+					button.IBN(onclick="deleteWall()") Undo Wall
+					| Ray Interval in °: 
+					input#AIN.AIN(type="number" value="5" min="1" max="360" placeholder="Angle" )
+					| Ray Bounce Count: 
+					input#BIN.AIN(type="number" value="1" min="0" max="10" placeholder="Bounces" )
+					| Ray Impact Markers 
+					label.switch
+						input#BID(type='checkbox' onchange="toggleBalls()" checked)
+						span.slider.round
+				h6#wallstat
+			.LGN
+				h4 Press 
+					b.LGL w
+					|  to add a wall
+				h4 Hold 
+					b.LGL r
+					|  to render rays
+	script
+		include ../scripts/Globals.js
+		include ../scripts/Wall.js
+		include ../scripts/Ray.js
+		include ../scripts/PrebuiltWalls.js
+		include ../scripts/sketch.js
+	script(type='text/javascript', src="https://code.jquery.com/jquery-3.5.1.js")
+	script(type='text/javascript', src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js")

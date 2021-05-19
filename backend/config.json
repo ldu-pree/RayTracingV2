@@ -1,0 +1,9 @@
+{
+    "loginRequired": "false",
+	"PF": "IT-Way: ",
+	"debug": {
+		"error": true,
+		"data": false,
+		"success": false
+	}
+}
