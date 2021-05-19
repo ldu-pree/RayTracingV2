@@ -5,4 +5,5 @@
 
 ### Press w to add a wall
 ### Hold r to render rays
-![Screenshot (27)](https://user-images.githubusercontent.com/48067817/118808026-4c0f7f80-b8a9-11eb-87b8-498ae4d1985c.png)
+![Screenshot (30)](https://user-images.githubusercontent.com/48067817/118884336-99fea480-b8f6-11eb-8084-9592de2de2fd.png)
+
